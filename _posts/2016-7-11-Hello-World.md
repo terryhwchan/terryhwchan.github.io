@@ -143,14 +143,14 @@ Dependent Variable:
 * Aggregate popularity of the song = SUM of all weekly popularity score as defined by:
         weekly_popularity = 101 - weekly_ranking
 
-#### From the billboard dataset, we have the following answers for the 4 questions for year 2000:
+From the billboard dataset, we have the following answers for the 4 questions for year 2000:
 
 * Artist the song: Destiny's Child, Creed, N'Sync, Lonestar, and Christina Aguilara
 * Length of the song: 220sec (3min40sec) - 255sec (4min-15sec)
 * Genre of the song: ROCK!
 * Month of release the song: Does not seem to matter too much
 
-#### For the future data...similar to what we did above with the billboard data set:
+For the future data...similar to what we did above with the billboard data set:
 * we can collect data in each of the four independent variables(Artist, Genre, Length, Month of release) and the dependent variable (billboard rankings => aggregate popularity)
 * track the data over a longer period of time (instead only one year in our example)
 * account for disppearance then reappearance on the billboard if appropriate (which would gives us a more realistic popularity of the song
