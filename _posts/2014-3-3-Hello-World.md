@@ -129,6 +129,39 @@ bb_melt_df["weekly_popularity"] = bb_melt_df["Ranking"].apply(popularity)
 # ![](https://raw.githubusercontent.com/terryhwchan/terryhwchan.github.io/master/12.png)
 *Comment: This shows the top 5 ranking songs for the entire year 2000, dates are properly matched using the weekly ranking*
 
+#### PROBLEM STATEMENT: How to create a top ranking billboard song in general?
+
+Independent Variables:
+
+* Artist the song
+* Length of the song
+* Genre of the song
+* Month of release the song
+
+Dependent Variable:
+
+* Aggregate popularity of the song = SUM of all weekly popularity score as defined by:
+        weekly_popularity = 101 - weekly_ranking
+
+From the billboard dataset, we have the following answers for the 4 questions for year 2000:
+
+* Artist the song: Destiny's Child, Creed, N'Sync, Lonestar, and Christina Aguilara
+* Length of the song: 220sec (3min40sec) - 255sec (4min-15sec)
+* Genre of the song: ROCK!
+* Month of release the song: Does not seem to matter too much
+
+
+For the future data...similar to what we did above with the billboard data set:
+* we can collect data in each of the four independent variables(Artist, Genre, Length, Month of release) and the dependent variable (billboard rankings => aggregate popularity)
+* track the data over a longer period of time (instead only one year in our example)
+* account for disppearance then reappearance on the billboard if appropriate (which would gives us a more realistic popularity of the song
+* can collect addition data for the tracks such as: 
+    * number of concurrent singles release by the same artist
+    * marketing budget of the song
+
+
+
+
 <!--Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).-->
 
 <!--![_config.yml]({{ site.baseurl }}/images/config.png)-->
